@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: max-content;
+    margin: auto;
+}
+
+.container {
+background-color: rgb(15, 15, 15);
+}
+
+.title {
+    color: #c5a800;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid #c5a800;
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: bisque;
+    width: 50px;
+    height: 50px;
+    background-color: #184719;
+    margin: 4px;
+    border-radius: 15%;
+}
+
+.guess {
+    display:flex;
+    justify-content: center;
+}
+
+.first {
+    margin-top: 40px;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.invalid {
+    border: 2px solid red;
+    animation: tilt-shaking 0.15s infinite;
+}
